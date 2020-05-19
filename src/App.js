@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import * as S from './styled.js';
 
 function App() {
+  const [theme, setTheme] = useState(null);
+  const isDarkMode = theme === 'dark';
+
+  useEffect(() => {
+    setTheme(window.__theme);
+    window.__onThemeChange = () => setTheme(window.__theme);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <S.Wrapper>
+      <S.Button
+        onClick={() => {
+          window.__setPreferredTheme(isDarkMode ? 'light' : 'dark');
+        }}
+      >
+        <S.On>ON</S.On>
+        <S.Off>OFF</S.Off>
+        <S.Toggle status={isDarkMode ? 'On' : 'Off'}/>
+      </S.Button>
+    </S.Wrapper>
   );
 }
 
