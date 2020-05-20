@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/lightAndDark/static/js/main.a39faf8c.chunk.js",
+    "main.js.map": "/lightAndDark/static/js/main.a39faf8c.chunk.js.map",
+    "runtime-main.js": "/lightAndDark/static/js/runtime-main.17fc43c1.js",
+    "runtime-main.js.map": "/lightAndDark/static/js/runtime-main.17fc43c1.js.map",
+    "static/js/2.616141d7.chunk.js": "/lightAndDark/static/js/2.616141d7.chunk.js",
+    "static/js/2.616141d7.chunk.js.map": "/lightAndDark/static/js/2.616141d7.chunk.js.map",
+    "index.html": "/lightAndDark/index.html",
+    "precache-manifest.64321d89d9d5ada3a102f7d0666bf401.js": "/lightAndDark/precache-manifest.64321d89d9d5ada3a102f7d0666bf401.js",
+    "service-worker.js": "/lightAndDark/service-worker.js",
+    "static/js/2.616141d7.chunk.js.LICENSE.txt": "/lightAndDark/static/js/2.616141d7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.17fc43c1.js",
+    "static/js/2.616141d7.chunk.js",
+    "static/js/main.a39faf8c.chunk.js"
+  ]
+}
